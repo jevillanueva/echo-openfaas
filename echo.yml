@@ -1,0 +1,9 @@
+version: 1.0
+provider:
+  name: openfaas
+  gateway: https://faas.jevillanueva.dev/
+functions:
+  echo:
+    lang: python3
+    handler: ./echo
+    image: jevillanueva/echo-openfaas:latest
